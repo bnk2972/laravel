@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/home', function () {
+Route::get('/home2', function () {
     return view('welcome');
 });
 
