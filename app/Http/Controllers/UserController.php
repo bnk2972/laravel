@@ -81,6 +81,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        $product->delete();
+        return redirect('item');
     }
 }

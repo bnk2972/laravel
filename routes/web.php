@@ -20,3 +20,4 @@ Route::get('/jack', function () {
 });
 
 Route::get('/item', 'UserController@index');
+Route::delete('/item/delete/{id}', 'UserController@destroy');

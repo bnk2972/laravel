@@ -3,7 +3,7 @@
     <div>
         <h3>item3</h3>
     </div>
-    <table class="table-striped">
+    <table class="table table-striped">
         <tbody>
             <thead>
                 <tr>
@@ -12,7 +12,7 @@
                     <th>Detail</th>
                     <th>Amount</th>
                     <th>Price</th>
-                    <th>#</th>
+                    <th colspan="2">#</th>
                 </tr>
             </thead>
             @foreach($result as $res)
@@ -22,7 +22,16 @@
                     <td>{{ $res->detail }}</td>
                     <td>{{ $res->amount }}</td>
                     <td>{{ $res->price }}</td>
-                    <td></td>
+                    <td>
+                        <a href="#" class="btn btn-primary">edit</button>
+                    </td>
+                    <td>
+                        <form action="/item/delete/{{ $res->productID }}" method="post">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-danger">delete</button>
+                        </form>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
