@@ -12,6 +12,11 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function __construct(){
+         $this->middleware('auth');
+         
+     }
+
     public function index()
     {
         $result = Product::all();
@@ -25,7 +30,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -36,7 +41,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**

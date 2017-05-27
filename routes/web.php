@@ -19,5 +19,11 @@ Route::get('/jack', function () {
     return view('Jack');
 });
 
-Route::get('/item', 'UserController@index');
+Route::get('/item', 'UserController@index'); //->middleware('auth');
 Route::delete('/item/delete/{id}', 'UserController@destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/login', 'Auth\LoginController@index');
+// Route::post('login',['as'=>'login', 'uses'=>'Auth\LoginController@postLogin']);
