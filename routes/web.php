@@ -18,3 +18,5 @@ Route::get('/home2', function () {
 Route::get('/jack', function () {
     return view('Jack');
 });
+
+Route::get('/item', 'UserController@index');
