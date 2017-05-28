@@ -1,7 +1,7 @@
 @extends('layout')
 @section('body')
     <div>
-        <h3>Item1</h3>
+        <h3>Product Type</h3>
     </div>
     <table class="table table-striped">
         <tbody>
@@ -9,19 +9,13 @@
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Detail</th>
-                    <th>Amount</th>
-                    <th>Product Type</th>
                     <th colspan="2">#</th>
                 </tr>
             </thead>
             @foreach($result as $res)
                 <tr>
-                    <td>{{ $res->productID }}</td>
-                    <td>{{ $res->productNAME }}</td>
-                    <td>{{ $res->detail }}</td>
-                    <td>{{ $res->amount }}</td>
                     <td>{{ $res->typeID }}</td>
+                    <td>{{ $res->typeNAME }}</td>
                     <td>
                         <a href="#" class="btn btn-primary">edit</button>
                     </td>

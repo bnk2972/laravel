@@ -21,9 +21,12 @@ Route::get('/jack', function () {
 
 Route::get('/item', 'UserController@index'); //->middleware('auth');
 Route::delete('/item/delete/{id}', 'UserController@destroy');
+Route::get('/type','ProductTypeController@index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/login', 'Auth\LoginController@index');
 // Route::post('login',['as'=>'login', 'uses'=>'Auth\LoginController@postLogin']);
+
+Route::get('/member', 'MemberController@index')->middleware('auth');
