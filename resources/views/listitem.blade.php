@@ -11,6 +11,7 @@
                     <th>Name</th>
                     <th>Detail</th>
                     <th>Amount</th>
+                    <th>Product Type</th>
                     <th colspan="2">#</th>
                 </tr>
             </thead>
@@ -20,6 +21,7 @@
                     <td>{{ $res->productNAME }}</td>
                     <td>{{ $res->detail }}</td>
                     <td>{{ $res->amount }}</td>
+                    <td>{{ $res->typeID }}</td>
                     <td>
                         <a href="#" class="btn btn-primary">edit</button>
                     </td>
