@@ -11,7 +11,6 @@
                     <th>Name</th>
                     <th>Detail</th>
                     <th>Amount</th>
-                    <th>Price</th>
                     <th colspan="2">#</th>
                 </tr>
             </thead>
@@ -21,7 +20,6 @@
                     <td>{{ $res->productNAME }}</td>
                     <td>{{ $res->detail }}</td>
                     <td>{{ $res->amount }}</td>
-                    <td>{{ $res->price }}</td>
                     <td>
                         <a href="#" class="btn btn-primary">edit</button>
                     </td>
