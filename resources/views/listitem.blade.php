@@ -1,7 +1,7 @@
 @extends('layout')
 @section('body')
     <div>
-        <h3>item3</h3>
+        <h3>item1</h3>
     </div>
     <table class="table table-striped">
         <tbody>
