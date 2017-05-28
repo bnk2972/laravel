@@ -28,3 +28,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/login', 'Auth\LoginController@index');
 // Route::post('login',['as'=>'login', 'uses'=>'Auth\LoginController@postLogin']);
+
+Route::get('/member', 'MemberController@index')->middleware('auth');
