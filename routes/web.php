@@ -21,6 +21,7 @@ Route::get('/jack', function () {
 
 Route::get('/item', 'UserController@index'); //->middleware('auth');
 Route::delete('/item/delete/{id}', 'UserController@destroy');
+Route::get('/type','ProductTypeController@index');
 
 Auth::routes();
 
