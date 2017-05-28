@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <nav>
-            <h1>Beer Shop</h1>
+            <h1>Jack&Beer Shop</h1>
         </nav>
     </div>
     <div class="container">
