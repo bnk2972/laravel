@@ -12,6 +12,7 @@
                     <th>Detail</th>
                     <th>Amount</th>
                     <th>Price</th>
+                    <th>Product Type</th>
                     <th colspan="2">#</th>
                 </tr>
             </thead>
@@ -22,6 +23,7 @@
                     <td>{{ $res->detail }}</td>
                     <td>{{ $res->amount }}</td>
                     <td>{{ $res->price }}</td>
+                    <td>{{ $res->typeID }}</td>
                     <td>
                         <a href="#" class="btn btn-primary">edit</button>
                     </td>
